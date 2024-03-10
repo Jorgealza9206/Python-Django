@@ -1,0 +1,10 @@
+from Vehiculo import *
+
+vehiculo1 = Vehiculo('rosado',2)
+print(vehiculo1)
+
+bicicleta1 = Bicicleta('negro', 2, 'montaña')
+print(bicicleta1)
+
+coche1 = Coche('azul', 4, '250 km/h')
+print(coche1)
