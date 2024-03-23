@@ -1,7 +1,13 @@
 class FiguraGeometrica:
     def __init__(self, alto, ancho):
-        self._alto = alto
-        self._ancho = ancho
+        if 0 < ancho < 10:
+            self._ancho = ancho
+        else:
+            self._ancho = 0
+        if 0 < alto < 10:
+            self._alto = alto
+        else:
+            self._alto = 0
 
     @property
     def alto(self):

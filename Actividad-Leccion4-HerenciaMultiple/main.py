@@ -1,10 +1,13 @@
 
 from Cuadrado import *
+from Rectangulo import Rectangulo
 
-#triangulo1 = FiguraGeometrica(3,4)
-#triangulo2 = Color('verde')
-cuadrado1 = Cuadrado(5,'verde')
-#print(triangulo1)
-#print(triangulo2)
+print('Creación objeto Cuadrado'.center(50,'-'))
+cuadrado1 = Cuadrado(-5,'verde')
 print(f'La figura tiene un area de {cuadrado1.area()}')
 print(cuadrado1)
+
+print('Creación objeto Rectangulo'.center(50,'-'))
+rectangulo1 = Rectangulo(14,2,'azul')
+print(f'La figura tiene un area de {rectangulo1.area()}')
+print(rectangulo1)
