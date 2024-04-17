@@ -13,10 +13,13 @@ class Computadora:
         self._monitor = monitor
 
     def __str__(self):
-        return f'Id: {self.idComputadora} Nombre: {self._nombre}, Monitor: {Monitor().__str__()}'
+        return (f'{self._nombre} : {self.idComputadora}'
+                f'\n\tMonitor: {m1.__str__()}'
+                f'\n\tTeclado: {t1.__str__()}'
+                f'\n\tRatón: {r1.__str__()}')
 
 r1 = Raton('usb','hp')
 m1 = Monitor('hp','15 pulgadas')
 t1 = Teclado('bluetooth', 'lenovo')
-c1 = Computadora('Gamer', Monitor('hp','15 pulgadas'), '', '')
+c1 = Computadora('Gamer', m1, '', '')
 print(c1)
