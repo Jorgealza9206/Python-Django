@@ -24,8 +24,9 @@ class Dispositivo:
     def __str__(self):
         return f'marca: {self._marca}, tipo_entrada: {self._tipoEntrada}'
 
-new = Dispositivo('usb','hp')
-print(new)
-new.marca = 'lenovo'
-new.tipoEntrada = 'bluetooth'
-print(new)
+if __name__ == '__main__':
+    new = Dispositivo('usb', 'hp')
+    print(new)
+    new.marca = 'lenovo'
+    new.tipoEntrada = 'bluetooth'
+    print(new)

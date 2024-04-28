@@ -10,5 +10,7 @@ class Raton(Dispositivo):
     def __str__(self):
         return f'Ratón: Id: {self.idRaton} {super ().__str__()}'
 
-r1 = Raton('usb','hp')
-print(r1)
+
+if __name__== '__main__':
+    r1 = Raton('usb', 'hp')
+    print(r1)

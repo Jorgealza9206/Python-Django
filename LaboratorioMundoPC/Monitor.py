@@ -26,8 +26,9 @@ class Monitor():
     def tamanio(self,tamanio):
         self._tamanio = tamanio
 
-m1 = Monitor('hp','15 pulgadas')
-print(m1)
-m1.tamanio = '18 pulgadas'
-print(m1.tamanio)
-print(m1)
+if __name__== '__main__':
+    m1 = Monitor('hp', '15 pulgadas')
+    print(m1)
+    m1.tamanio = '18 pulgadas'
+    print(m1.tamanio)
+    print(m1)

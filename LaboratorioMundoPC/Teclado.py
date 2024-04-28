@@ -11,6 +11,6 @@ class Teclado(Dispositivo):
     def __str__(self):
         return f'Teclado: Id: {self.idTeclado} {super().__str__()}'
 
-
-t1 = Teclado('bluetooth', 'lenovo')
-print(t1)
+if __name__== '__main__':
+    t1 = Teclado('bluetooth', 'lenovo')
+    print(t1)
