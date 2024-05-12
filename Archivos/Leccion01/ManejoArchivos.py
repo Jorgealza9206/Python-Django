@@ -5,7 +5,9 @@ class ManejoArchivos:
     def __enter__(self):
         print('Obtenemos el recurso'.center(50,'-'))
         self.nombre = open(self.nombre, 'r', encoding='utf-8')
-        retur self.nombre
+        return self.nombre
 
     def __exit__(self, tipo_excepcion, valor, traza_error):
-        
+        print('Cerramos el recurso'.center(50,'-'))
+        if self.nombre:
+            self.nombre.close()
