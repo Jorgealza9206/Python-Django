@@ -1,8 +1,6 @@
 from dominio.Pelicula import Pelicula
-from servicio.CatalogoPeliculas import CatalogoPeliculas
+from servicio.CatalogoPeliculas import CatalogoPeliculas as cp
 import time
-
-nuevocatalogo = CatalogoPeliculas()
 
 while(True):
     print('''Opciones:
@@ -15,15 +13,15 @@ while(True):
 
     if opcion == 1:
         pelicula = Pelicula(input('Ingresa el nombre de la pelicula: '))
-        nuevocatalogo.agregar_pelicula(pelicula)
+        cp.agregar_pelicula(pelicula)
     elif opcion == 2:
-        nuevocatalogo.listar_pelicula()
+        cp.listar_pelicula()
     elif opcion == 3:
-        nuevocatalogo.eliminar()
+        cp.eliminar()
     elif opcion == 4:
         break
     else:
         continue
 
-    time.sleep(3)
+    time.sleep(2)
 

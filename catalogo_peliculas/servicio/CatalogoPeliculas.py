@@ -3,19 +3,21 @@ import os
 class CatalogoPeliculas:
     ruta_archivo = 'peliculas.txt'
 
-    def agregar_pelicula(self, pelicula):
-        with open(self.ruta_archivo,'a',encoding='utf-8') as archivo:
+    @classmethod
+    def agregar_pelicula(cls, pelicula):
+        with open(cls.ruta_archivo,'a',encoding='utf-8') as archivo:
             archivo.write(f'{pelicula.__str__()}\n')
             print(f'Pelicula {pelicula} agregada')
 
-    def listar_pelicula(self):
+    @classmethod
+    def listar_pelicula(cls):
         try:
-            with open(self.ruta_archivo, 'r', encoding='utf-8') as archivo:
+            with open(cls.ruta_archivo, 'r', encoding='utf-8') as archivo:
                 print(archivo.read())
         except:
             print("No hay catálogo creado")
 
-
-    def eliminar(self):
-        os.remove(self.ruta_archivo)
+    @classmethod
+    def eliminar(cls):
+        os.remove(cls.ruta_archivo)
         print('Archivo eliminado con éxito')
