@@ -3,3 +3,91 @@
 09:43:03 PM: WARNING [logger_base.py:14] Mensaje a nivel warning
 09:43:03 PM: ERROR [logger_base.py:15] Mensaje a nivel error
 09:43:03 PM: CRITICAL [logger_base.py:16] Mensaje a nivel critical
+10:38:13 PM: DEBUG [logger_base.py:12] Mensaje a nivel debug
+10:38:13 PM: INFO [logger_base.py:13] Mensaje a nivel info
+10:38:13 PM: WARNING [logger_base.py:14] Mensaje a nivel warning
+10:38:13 PM: ERROR [logger_base.py:15] Mensaje a nivel error
+10:38:13 PM: CRITICAL [logger_base.py:16] Mensaje a nivel critical
+10:44:13 PM: DEBUG [Persona.py:50] 
+            Id Persona: 1, Nombre: Juan, Apellido: Perez,
+            Email jperez@mail.com
+        
+10:49:43 PM: DEBUG [logger_base.py:12] Mensaje a nivel debug
+10:49:43 PM: INFO [logger_base.py:13] Mensaje a nivel info
+10:49:43 PM: WARNING [logger_base.py:14] Mensaje a nivel warning
+10:49:43 PM: ERROR [logger_base.py:15] Mensaje a nivel error
+10:49:43 PM: CRITICAL [logger_base.py:16] Mensaje a nivel critical
+10:50:12 PM: CRITICAL [logger_base.py:16] Mensaje a nivel critical
+10:50:44 PM: DEBUG [logger_base.py:12] Mensaje a nivel debug
+10:50:44 PM: INFO [logger_base.py:13] Mensaje a nivel info
+10:50:44 PM: WARNING [logger_base.py:14] Mensaje a nivel warning
+10:50:44 PM: ERROR [logger_base.py:15] Mensaje a nivel error
+10:50:44 PM: CRITICAL [logger_base.py:16] Mensaje a nivel critical
+10:51:26 PM: DEBUG [Persona.py:50] 
+            Id Persona: 1, Nombre: Juan, Apellido: Perez,
+            Email jperez@mail.com
+        
+10:55:23 PM: DEBUG [Persona.py:50] 
+            Id Persona: 1, Nombre: Juan, Apellido: Perez,
+            Email jperez@mail.com
+        
+10:55:23 PM: DEBUG [Persona.py:52] 
+            Id Persona: None, Nombre: Juan, Apellido: Perez,
+            Email jperez@mail.com
+        
+10:57:08 PM: DEBUG [Persona.py:50] 
+            Id Persona: 1, Nombre: Juan, Apellido: Perez,
+            Email jperez@mail.com
+        
+10:57:08 PM: DEBUG [Persona.py:53] 
+            Id Persona: None, Nombre: Juan, Apellido: Perez,
+            Email jperez@mail.com
+        
+10:57:08 PM: DEBUG [Persona.py:56] 
+            Id Persona: 1, Nombre: None, Apellido: None,
+            Email None
+        
+11:03:01 PM: DEBUG [conexion.py:22] Conexión exitosa: <connection object at 0x0000028514A8ABD0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:03:40 PM: ERROR [conexion.py:25] Ocurrió una excepción al obtener la conexión connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres1"
+
+11:03:58 PM: DEBUG [conexion.py:22] Conexión exitosa: <connection object at 0x0000023FD908ABD0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:04:19 PM: DEBUG [conexion.py:22] Conexión exitosa: <connection object at 0x000001D95AA4ABD0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:04:19 PM: DEBUG [conexion.py:35] Se abrió correctamente el cursor: <cursor object at 0x000001D95ABD8040; closed: 0>
+11:39:11 PM: DEBUG [conexion.py:22] Conexión exitosa: <connection object at 0x000001549C477450; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:39:11 PM: DEBUG [conexion.py:35] Se abrió correctamente el cursor: <cursor object at 0x000001549CCD51C0; closed: 0>
+11:39:11 PM: DEBUG [Persona_DAO.py:29] 
+            Id Persona: 1, Nombre: Juan, Apellido: Perez,
+            Email jperez@mail.com
+        
+11:39:11 PM: DEBUG [Persona_DAO.py:29] 
+            Id Persona: 2, Nombre: Ivonne, Apellido: Gutierrez,
+            Email igutierrez@mail.com
+        
+11:39:11 PM: DEBUG [Persona_DAO.py:29] 
+            Id Persona: 4, Nombre: Carlos, Apellido: Lara,
+            Email clara@mail.com
+        
+11:39:11 PM: DEBUG [Persona_DAO.py:29] 
+            Id Persona: 5, Nombre: Marcos, Apellido: Cantu,
+            Email mcantu@mail.com
+        
+11:39:11 PM: DEBUG [Persona_DAO.py:29] 
+            Id Persona: 6, Nombre: Angel, Apellido: Quintana,
+            Email mquintana@mail.com
+        
+11:39:11 PM: DEBUG [Persona_DAO.py:29] 
+            Id Persona: 7, Nombre: Maria, Apellido: Gonzalez,
+            Email mgonzalez@mail.com
+        
+11:39:11 PM: DEBUG [Persona_DAO.py:29] 
+            Id Persona: 9, Nombre: Maria, Apellido: Esparza,
+            Email mesparza@mail.com
+        
+11:39:11 PM: DEBUG [Persona_DAO.py:29] 
+            Id Persona: 11, Nombre: Carlos, Apellido: Lara,
+            Email clara@mail.com
+        
+11:39:11 PM: DEBUG [Persona_DAO.py:29] 
+            Id Persona: 12, Nombre: Alex, Apellido: Rojas,
+            Email arojas@mail.com
+        
