@@ -23,6 +23,11 @@ class PersonaDAO:
                 personas.append(persona)
             return personas
 
+    @classmethod
+    def insertar(cls):
+        with Conexion.obtenerCursor() as cursor:
+            
+
 if __name__ == '__main__':
     personas = PersonaDAO.seleccionar()
     for persona in personas:
