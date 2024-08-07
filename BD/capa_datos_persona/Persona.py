@@ -10,7 +10,7 @@ class Persona:
     def __str__(self):
         return f'''
             Id Persona: {self._id_persona}, Nombre: {self._nombre}, Apellido: {self._apellido},
-            Email {self._email}
+            Email: {self._email}
         '''
 
     @property
