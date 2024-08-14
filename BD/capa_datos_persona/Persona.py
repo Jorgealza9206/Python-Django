@@ -25,7 +25,7 @@ class Persona:
     def nombre(self):
         return self._nombre
 
-    @id_persona.setter
+    @nombre.setter
     def nombre(self, nombre):
         self._nombre = nombre
     
@@ -33,7 +33,7 @@ class Persona:
     def apellido(self):
         return self._apellido
 
-    @id_persona.setter
+    @apellido.setter
     def apellido(self, apellido):
         self._apellido = apellido
         
@@ -41,7 +41,7 @@ class Persona:
     def email(self):
         return self._email
 
-    @id_persona.setter
+    @email.setter
     def email(self, email):
         self._email = email
 
