@@ -923,3 +923,73 @@
 06:43:08 PM: DEBUG [conexion.py:38] Conexión obtenida del pool: <connection object at 0x0000021612F0A570; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
 06:43:08 PM: DEBUG [conexion.py:71] Regresamos la conexión al pool: <connection object at 0x0000021612F0A570; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
 06:43:08 PM: DEBUG [conexion.py:38] Conexión obtenida del pool: <connection object at 0x0000021612F0A570; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:16:24 PM: DEBUG [cursor_del_pool.py:9] Inicio del método with __enter__
+01:16:24 PM: DEBUG [conexion.py:27] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000002AEDBB9D810>
+01:16:24 PM: DEBUG [conexion.py:38] Conexión obtenida del pool: <connection object at 0x000002AEDBF19F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:29:19 PM: DEBUG [cursor_del_pool.py:15] Se ejecuta método exit
+01:29:19 PM: ERROR [cursor_del_pool.py:18] Ocurrió una excepción, se hace rollback: , <class 'KeyboardInterrupt'>, <traceback object at 0x000002AEDBFCAA00>
+01:29:19 PM: DEBUG [conexion.py:71] Regresamos la conexión al pool: <connection object at 0x000002AEDBF19F10; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:29:27 PM: DEBUG [cursor_del_pool.py:9] Inicio del método with __enter__
+01:29:27 PM: DEBUG [conexion.py:27] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000269DAC91510>
+01:29:27 PM: DEBUG [conexion.py:38] Conexión obtenida del pool: <connection object at 0x00000269DAD0E570; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:29:27 PM: DEBUG [Persona_DAO.py:34] Persona insertada: 
+            Id Persona: None, Nombre: Valentina, Apellido: Londoño,
+            Email: vlondono@mail.com
+        
+01:29:27 PM: DEBUG [cursor_del_pool.py:15] Se ejecuta método exit
+01:29:27 PM: DEBUG [cursor_del_pool.py:21] Commit de la transacción
+01:29:27 PM: DEBUG [conexion.py:71] Regresamos la conexión al pool: <connection object at 0x00000269DAD0E570; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:29:27 PM: DEBUG [Persona_DAO.py:59] Personas insertadas: 1
+01:29:27 PM: DEBUG [cursor_del_pool.py:9] Inicio del método with __enter__
+01:29:27 PM: DEBUG [conexion.py:38] Conexión obtenida del pool: <connection object at 0x00000269DAD0E570; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:29:27 PM: DEBUG [cursor_del_pool.py:15] Se ejecuta método exit
+01:29:27 PM: DEBUG [cursor_del_pool.py:21] Commit de la transacción
+01:29:27 PM: DEBUG [conexion.py:71] Regresamos la conexión al pool: <connection object at 0x00000269DAD0E570; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 1, Nombre: Juan Carlos, Apellido: Juarez,
+            Email: cjjuarez@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 2, Nombre: Angel, Apellido: Avila,
+            Email: aavila@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 4, Nombre: Carlos, Apellido: Lara,
+            Email: clara@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 5, Nombre: Marcos, Apellido: Cantu,
+            Email: mcantu@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 6, Nombre: Angel, Apellido: Quintana,
+            Email: mquintana@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 7, Nombre: Maria, Apellido: Gonzalez,
+            Email: mgonzalez@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 9, Nombre: Maria, Apellido: Esparza,
+            Email: mesparza@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 20, Nombre: Brayan, Apellido: Sierra,
+            Email: bsierra@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 21, Nombre: Yeison, Apellido: Neira,
+            Email: yneira@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 22, Nombre: Victor, Apellido: Casachahua,
+            Email: vcasachahua@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 23, Nombre: Valentina, Apellido: Londoño,
+            Email: vlondono@mail.com
+        
+01:29:27 PM: DEBUG [Persona_DAO.py:74] 
+            Id Persona: 24, Nombre: Valentina, Apellido: Londoño,
+            Email: vlondono@mail.com
+        
