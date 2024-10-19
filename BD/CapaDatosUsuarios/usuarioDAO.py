@@ -8,7 +8,7 @@ class UsuarioDAO:
     CRUD (Create-Read-Update-Delete)
     '''
     _SELECCIONAR = 'SELECT * FROM usuario ORDER BY id_usuario'
-    _INSERTAR = 'INSERT INTO USUARIO(username, password) VALUES(%s, %s)'
+    _INSERTAR = 'INSERT INTO USUARIO(username, password) VALUES(%s,%s)'
     _ACTUALIZAR = 'UPDATE usuario SET username=%s, password=%s WHERE id_usuario=%s'
     _ELIMINAR = 'DELETE FROM usuario WHERE id_usuario=%s'
 
@@ -51,17 +51,25 @@ class UsuarioDAO:
 
 if __name__ == '__main__':
     #Insertar un registro
-    usuario1 = Usuario(username='Valentina', password='Londoño1234')
-    usuarios_insertados = UsuarioDAO.insertar(usuario1)
-    log.debug(f'Usuarios insertados: {usuarios_insertados}')
+    # usuario1 = Usuario(username='Valentina', password='Londoño1234')
+    # usuarios_insertados = UsuarioDAO.insertar(usuario1)
+    # log.debug(f'Usuarios insertados: {usuarios_insertados}')
+    #
+    # usuario2 = Usuario(username='Valentina', password='Londoño1234')
+    # usuarios_insertados = UsuarioDAO.insertar(usuario2)
+    # log.debug(f'Usuarios insertados: {usuarios_insertados}')
+    #
+    # usuario3 = Usuario(username='Jhostin', password='Cansado1234')
+    # usuarios_insertados = UsuarioDAO.insertar(usuario3)
+    # log.debug(f'Usuarios insertados: {usuarios_insertados}')
 
     # #Actualizar registro
-    # usuario1 = Usuario(22,'Victor','Casachahua','vcasachahua@mail.com')
-    # usuarios_actualizados = UsuarioDAO.actualizar(usuario1)
-    # log.debug(f'Usuarios actualizados: {usuarios_actualizados}')
+    usuario1 = Usuario(2,'Jaime','Guerrillo1234')
+    usuarios_actualizados = UsuarioDAO.actualizar(usuario1)
+    log.debug(f'Usuarios actualizados: {usuarios_actualizados}')
     #
     # #Eliminar un registro
-    # usuario1 = Usuario(id_usuario=11)
+    # usuario1 = Usuario(id_usuario=1)
     # usuarios_eliminados = UsuarioDAO.eliminar(usuario1)
     # log.debug(f'Usuarios eliminados: {usuarios_eliminados}')
 
