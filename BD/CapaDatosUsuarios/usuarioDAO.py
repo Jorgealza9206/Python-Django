@@ -71,7 +71,7 @@ if __name__ == '__main__':
     # #Eliminar un registro
     # usuario1 = Usuario(id_usuario=1)
     # usuarios_eliminados = UsuarioDAO.eliminar(usuario1)
-    # log.debug(f'Usuarios eliminados: {usuarios_eliminados}')
+    #
 
     #Seleccionar objetos
     usuarios = UsuarioDAO.seleccionar()

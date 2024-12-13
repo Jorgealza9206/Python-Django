@@ -242,3 +242,117 @@ DETAIL:  Array value must start with "{" or dimension information.
 09:56:50 PM: DEBUG [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
 09:56:50 PM: DEBUG [MenuCapaUsuario.py:8] Id: 3, username: Valentina, password: Londoño1234
 09:56:50 PM: DEBUG [MenuCapaUsuario.py:8] Id: 4, username: Jhostin, password: Cansado1234
+11:06:28 AM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+11:06:28 AM: DEBUG [conexion.py:25] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001C633AF4D10>
+11:06:28 AM: DEBUG [conexion.py:36] Conexión obtenida del pool: <connection object at 0x000001C633E0E020; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:06:28 AM: DEBUG [cursor_del_pool.py:16] Se ejecuta método exit
+11:06:28 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+11:06:28 AM: DEBUG [conexion.py:42] Regresamos la conexión al pool: <connection object at 0x000001C633E0E020; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:06:28 AM: DEBUG [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+11:06:28 AM: DEBUG [MenuCapaUsuario.py:8] Id: 3, username: Valentina, password: Londoño1234
+11:06:28 AM: DEBUG [MenuCapaUsuario.py:8] Id: 4, username: Jhostin, password: Cansado1234
+11:06:47 AM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+11:06:47 AM: DEBUG [conexion.py:25] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001BCD28E4D10>
+11:06:47 AM: DEBUG [conexion.py:36] Conexión obtenida del pool: <connection object at 0x000001BCD2C0E020; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:06:48 AM: DEBUG [cursor_del_pool.py:16] Se ejecuta método exit
+11:06:48 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+11:06:48 AM: DEBUG [conexion.py:42] Regresamos la conexión al pool: <connection object at 0x000001BCD2C0E020; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+11:06:48 AM: DEBUG [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+11:06:48 AM: DEBUG [MenuCapaUsuario.py:8] Id: 3, username: Valentina, password: Londoño1234
+11:06:48 AM: DEBUG [MenuCapaUsuario.py:8] Id: 4, username: Jhostin, password: Cansado1234
+12:12:51 PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:12:52 PM: DEBUG [conexion.py:25] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001D77F77FB10>
+12:12:52 PM: DEBUG [conexion.py:36] Conexión obtenida del pool: <connection object at 0x000001D77FD0E020; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:12:52 PM: DEBUG [cursor_del_pool.py:16] Se ejecuta método exit
+12:12:52 PM: ERROR [cursor_del_pool.py:19] Ocurrió una excepción, se hace rollback: 'tuple' object has no attribute 'username', <class 'AttributeError'>, <traceback object at 0x000001D77F77F240>
+12:12:52 PM: DEBUG [conexion.py:42] Regresamos la conexión al pool: <connection object at 0x000001D77FD0E020; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:16:17 PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:16:17 PM: DEBUG [conexion.py:25] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x000001806666FA90>
+12:16:17 PM: DEBUG [conexion.py:36] Conexión obtenida del pool: <connection object at 0x0000018066C0E130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:16:17 PM: DEBUG [cursor_del_pool.py:16] Se ejecuta método exit
+12:16:17 PM: ERROR [cursor_del_pool.py:19] Ocurrió una excepción, se hace rollback: null value in column "username" of relation "usuario" violates not-null constraint
+DETAIL:  Failing row contains (5, null, null).
+, <class 'psycopg2.errors.NotNullViolation'>, <traceback object at 0x0000018066D43000>
+12:16:17 PM: DEBUG [conexion.py:42] Regresamos la conexión al pool: <connection object at 0x0000018066C0E130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:24:52 PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:24:52 PM: DEBUG [conexion.py:25] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000232FB283050>
+12:24:52 PM: DEBUG [conexion.py:36] Conexión obtenida del pool: <connection object at 0x00000232FB30E130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:24:52 PM: DEBUG [usuarioDAO.py:33] usuario insertado: Id: None, username: Jorge, password: 9206
+12:24:52 PM: DEBUG [cursor_del_pool.py:16] Se ejecuta método exit
+12:24:52 PM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+12:24:52 PM: DEBUG [conexion.py:42] Regresamos la conexión al pool: <connection object at 0x00000232FB30E130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:24:52 PM: DEBUG [MenuCapaUsuario.py:16] Usuarios insertados: 1
+12:36:24 PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:36:24 PM: DEBUG [conexion.py:25] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x00000239D837CB50>
+12:36:24 PM: DEBUG [conexion.py:36] Conexión obtenida del pool: <connection object at 0x00000239D8912130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:36:24 PM: DEBUG [cursor_del_pool.py:16] Se ejecuta método exit
+12:36:24 PM: ERROR [cursor_del_pool.py:19] Ocurrió una excepción, se hace rollback: operator does not exist: integer = record
+LINE 1: ... SET username=NULL, password=NULL WHERE id_usuario=('4', 'Cr...
+                                                             ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+, <class 'psycopg2.errors.UndefinedFunction'>, <traceback object at 0x00000239D89F4E80>
+12:36:24 PM: DEBUG [conexion.py:42] Regresamos la conexión al pool: <connection object at 0x00000239D8912130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:40:19 PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:40:19 PM: DEBUG [conexion.py:25] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000023FFE97CB50>
+12:40:19 PM: DEBUG [conexion.py:36] Conexión obtenida del pool: <connection object at 0x0000023FFEF0E130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:40:19 PM: DEBUG [usuarioDAO.py:41] usuario actualizado: Id: 4, username: Cristian, password: vicidial
+12:40:19 PM: DEBUG [cursor_del_pool.py:16] Se ejecuta método exit
+12:40:19 PM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+12:40:19 PM: DEBUG [conexion.py:42] Regresamos la conexión al pool: <connection object at 0x0000023FFEF0E130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:40:19 PM: DEBUG [MenuCapaUsuario.py:24] Usuarios actualizados: 1
+12:44:10 PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+12:44:10 PM: DEBUG [conexion.py:25] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000024EB3590F10>
+12:44:10 PM: DEBUG [conexion.py:36] Conexión obtenida del pool: <connection object at 0x0000024EB3B12130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:44:10 PM: DEBUG [usuarioDAO.py:49] Objeto eliminado: Id: 3, username: None, password: None
+12:44:10 PM: DEBUG [cursor_del_pool.py:16] Se ejecuta método exit
+12:44:10 PM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+12:44:10 PM: DEBUG [conexion.py:42] Regresamos la conexión al pool: <connection object at 0x0000024EB3B12130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+12:44:10 PM: DEBUG [MenuCapaUsuario.py:30] Usuarios eliminados: 1
+09:34:28 PM: DEBUG [cursor_del_pool.py:10] Inicio del método with __enter__
+09:34:28 PM: DEBUG [conexion.py:25] Creación del pool exitosa: <psycopg2.pool.SimpleConnectionPool object at 0x0000023D7BB6FD10>
+09:34:28 PM: DEBUG [conexion.py:36] Conexión obtenida del pool: <connection object at 0x0000023D7C122130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+09:34:28 PM: DEBUG [cursor_del_pool.py:16] Se ejecuta método exit
+09:34:28 PM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+09:34:28 PM: DEBUG [conexion.py:42] Regresamos la conexión al pool: <connection object at 0x0000023D7C122130; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0>
+09:34:28 PM: INFO [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+09:34:28 PM: INFO [MenuCapaUsuario.py:8] Id: 4, username: Cristian, password: vicidial
+09:34:28 PM: INFO [MenuCapaUsuario.py:8] Id: 6, username: Jorge, password: 9206
+09:40:34 PM: INFO [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+09:40:34 PM: INFO [MenuCapaUsuario.py:8] Id: 4, username: Cristian, password: vicidial
+09:40:34 PM: INFO [MenuCapaUsuario.py:8] Id: 6, username: Jorge, password: 9206
+09:45:10 PM: INFO [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+09:45:11 PM: INFO [MenuCapaUsuario.py:8] Id: 4, username: Cristian, password: vicidial
+09:45:11 PM: INFO [MenuCapaUsuario.py:8] Id: 6, username: Jorge, password: 9206
+09:35:10 PM: INFO [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+09:35:10 PM: INFO [MenuCapaUsuario.py:8] Id: 4, username: Cristian, password: vicidial
+09:35:10 PM: INFO [MenuCapaUsuario.py:8] Id: 6, username: Jorge, password: 9206
+09:35:41 PM: INFO [MenuCapaUsuario.py:16] Usuarios insertados: 1
+09:35:46 PM: INFO [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+09:35:46 PM: INFO [MenuCapaUsuario.py:8] Id: 4, username: Cristian, password: vicidial
+09:35:46 PM: INFO [MenuCapaUsuario.py:8] Id: 6, username: Jorge, password: 9206
+09:35:46 PM: INFO [MenuCapaUsuario.py:8] Id: 7, username: Catalina, password: Vergara2602
+09:37:05 PM: INFO [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+09:37:05 PM: INFO [MenuCapaUsuario.py:8] Id: 4, username: Cristian, password: vicidial
+09:37:05 PM: INFO [MenuCapaUsuario.py:8] Id: 6, username: Jorge, password: 9206
+09:37:05 PM: INFO [MenuCapaUsuario.py:8] Id: 7, username: Catalina, password: Vergara2602
+09:37:23 PM: INFO [MenuCapaUsuario.py:24] Usuarios actualizados: 1
+09:37:30 PM: INFO [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+09:37:30 PM: INFO [MenuCapaUsuario.py:8] Id: 4, username: Jhostin, password: Wolkvox
+09:37:30 PM: INFO [MenuCapaUsuario.py:8] Id: 6, username: Jorge, password: 9206
+09:37:30 PM: INFO [MenuCapaUsuario.py:8] Id: 7, username: Catalina, password: Vergara2602
+09:52:33 PM: ERROR [MenuCapaUsuario.py:19] Valor mal ingresado, intente nuevamente
+09:54:40 PM: ERROR [MenuCapaUsuario.py:19] Valor mal ingresado, intente nuevamente
+09:54:45 PM: INFO [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+09:54:45 PM: INFO [MenuCapaUsuario.py:8] Id: 4, username: Jhostin, password: Wolkvox
+09:54:45 PM: INFO [MenuCapaUsuario.py:8] Id: 6, username: Jorge, password: 9206
+09:54:45 PM: INFO [MenuCapaUsuario.py:8] Id: 7, username: Catalina, password: Vergara2602
+10:03:18 PM: INFO [MenuCapaUsuario.py:19] Valor mal ingresado, intente nuevamente
+10:04:59 PM: INFO [MenuCapaUsuario.py:37] Usuarios eliminados: 0
+10:05:08 PM: INFO [MenuCapaUsuario.py:8] Id: 2, username: Jaime, password: Guerrillo1234
+10:05:08 PM: INFO [MenuCapaUsuario.py:8] Id: 4, username: Jhostin, password: Wolkvox
+10:05:08 PM: INFO [MenuCapaUsuario.py:8] Id: 6, username: Jorge, password: 9206
+10:05:08 PM: INFO [MenuCapaUsuario.py:8] Id: 7, username: Catalina, password: Vergara2602
+10:05:17 PM: INFO [MenuCapaUsuario.py:37] Usuarios eliminados: 1
+10:05:22 PM: INFO [MenuCapaUsuario.py:8] Id: 4, username: Jhostin, password: Wolkvox
+10:05:22 PM: INFO [MenuCapaUsuario.py:8] Id: 6, username: Jorge, password: 9206
+10:05:22 PM: INFO [MenuCapaUsuario.py:8] Id: 7, username: Catalina, password: Vergara2602
