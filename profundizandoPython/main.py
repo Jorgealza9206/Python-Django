@@ -16,4 +16,11 @@ sueldo = 3000000
 # print(mensaje_con_formato)
 
 mensaje = 'Sueldo {2:.2f} Nombre {0} Edad {1} '.format(nombre, edad, sueldo)
+# print(mensaje)
+
+mensaje = 'Nombre {n} Edad {e} Sueldo {s:.2f}'.format(n=nombre, e=edad, s=sueldo)
+# print(mensaje)
+
+diccionario = {'nombre':'Iván','edad':35, 'sueldo':5000.00}
+mensaje = 'Nombre {persona[nombre]} Edad {persona[edad]} Sueldo {persona[sueldo]:.2f}'.format(persona=diccionario)
 print(mensaje)
