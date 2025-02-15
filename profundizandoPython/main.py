@@ -9,9 +9,9 @@
 # mensaje_con_formato = 'Hola %s %s. Tu sueldo es %.2f'
 # print(mensaje_con_formato%persona)
 
-nombre = 'Jorge'
-edad = 32
-sueldo = 3000000
+# nombre = 'Jorge'
+# edad = 32
+# sueldo = 3000000
 # mensaje_con_formato = 'Nombre {} Edad {} Sueldo {:.2f}'.format(nombre, edad, sueldo)
 # print(mensaje_con_formato)
 
@@ -26,9 +26,25 @@ sueldo = 3000000
 # print(mensaje)
 
 #f-string
-mensaje = f'Nombre {nombre} Edad {edad} Sueldo {sueldo:.2f}'
-print(mensaje)
-
-print(nombre, edad, sueldo)
+# mensaje = f'Nombre {nombre} Edad {edad} Sueldo {sueldo:.2f}'
+# print(mensaje)
+#
+# print(nombre, edad, sueldo)
 
 #multiplicación de str
+
+#carácteres de escape
+# resultado = 'Hola \' Mundo\''
+# print(resultado)
+
+# resultado = 'Se va a eliminar el .\b'
+# print(resultado)
+
+#Caracter \
+
+# resultado = 'c:\\directorio\\juamn'
+# print(resultado)
+
+#raw string
+resultado = r'Cadena con \n salto de linea'
+print(resultado)
