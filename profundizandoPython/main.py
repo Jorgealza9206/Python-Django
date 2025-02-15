@@ -1,50 +1,17 @@
-# nombre = 'Jorge'
-# edad = 32
-# mensaje_con_formato = 'Mi nombre es %s y tengo %d años'%(nombre,edad)
-# print(mensaje_con_formato)
+#Profundizando en el tipo str
 
-# persona = ('Karla', 'Gomez', 5000.00)
-# # mensaje_con_formato = 'Hola %s %s. Tu sueldo es %.f'%persona
-# # print(mensaje_con_formato)
-# mensaje_con_formato = 'Hola %s %s. Tu sueldo es %.2f'
-# print(mensaje_con_formato%persona)
+# carácteres unicode
 
-# nombre = 'Jorge'
-# edad = 32
-# sueldo = 3000000
-# mensaje_con_formato = 'Nombre {} Edad {} Sueldo {:.2f}'.format(nombre, edad, sueldo)
-# print(mensaje_con_formato)
+print('Hola\u0020Mundo')
+print('Notación simple:', '\u0041')
+print('Notación extendida:','\U00000041')
+print('Notación hexadecimal','\x41') #Cada digito representa un ASCII en hexadecimal
+print('Corazón','\u2665')
+print('Cara sonriendo','\U0001F600')
+print('Serpiente','\U0001f40d')
 
-# mensaje = 'Sueldo {2:.2f} Nombre {0} Edad {1} '.format(nombre, edad, sueldo)
-# # print(mensaje)
-#
-# mensaje = 'Nombre {n} Edad {e} Sueldo {s:.2f}'.format(n=nombre, e=edad, s=sueldo)
-# # print(mensaje)
-#
-# diccionario = {'nombre':'Iván','edad':35, 'sueldo':5000.00}
-# mensaje = 'Nombre {persona[nombre]} Edad {persona[edad]} Sueldo {persona[sueldo]:.2f}'.format(persona=diccionario)
-# print(mensaje)
-
-#f-string
-# mensaje = f'Nombre {nombre} Edad {edad} Sueldo {sueldo:.2f}'
-# print(mensaje)
-#
-# print(nombre, edad, sueldo)
-
-#multiplicación de str
-
-#carácteres de escape
-# resultado = 'Hola \' Mundo\''
-# print(resultado)
-
-# resultado = 'Se va a eliminar el .\b'
-# print(resultado)
-
-#Caracter \
-
-# resultado = 'c:\\directorio\\juamn'
-# print(resultado)
-
-#raw string
-resultado = r'Cadena con \n salto de linea'
-print(resultado)
+# Caracteres ascii
+caracter = chr(65)
+print(caracter)
+caracter = chr(64)
+print(caracter)
