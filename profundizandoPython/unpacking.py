@@ -34,3 +34,10 @@ print(valor1, valor2, valor3)
 
 valor1, *valores_restantes = regresa_varios_datos() #Novamos a procesar los últimos valores
 print(valor1, valores_restantes)
+
+#help(str.partition)
+hora, separador, minutos = '17:20'.partition(':') #Separa dependiendo por el separador
+# Devuelve tres valores, antes del separador, el separador y después del separador
+# Devuelve una tupla
+print(hora, minutos, separador)
+
