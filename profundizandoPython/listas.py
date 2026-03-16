@@ -49,3 +49,11 @@ print(f'Mismo contenido? {numeros1 == numeros2}')
 numeros2 = numeros1[:]
 print(f'Misma referencia? {numeros1 is numeros2}')
 print(f'Mismo contenido? {numeros1 == numeros2}')
+
+#Matrices
+matriz = [[10, 20], [30, 40, 50], [60, 70, 80, 90]]
+print(f'Matriz original: {matriz}')
+print(f'Renglón 0, Columna 0: {matriz[0][0]}')
+print(f'Renglón 2, Columna 2: {matriz[2][2]}')
+matriz[2][0] = 65
+print(f'Matriz modificada: {matriz}')
