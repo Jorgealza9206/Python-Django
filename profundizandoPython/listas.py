@@ -57,3 +57,22 @@ print(f'Renglón 0, Columna 0: {matriz[0][0]}')
 print(f'Renglón 2, Columna 2: {matriz[2][2]}')
 matriz[2][0] = 65
 print(f'Matriz modificada: {matriz}')
+
+lista_listas = [[10, 14, 87, 90, 71],[4, 5, 6, 7], [9, 0, 11, 15, 45, 61, 70]]
+lista_listas.sort(key=len) #Ordenamos la lista por la cantidad de elementos
+print(f'Ordenar lista: {lista_listas}')
+
+#sorted built-in
+nombres1 = ['Juan Carlos','Karla','Pedro','Esperanza']
+nombres1 = sorted(nombres1) #Ordena los nombres de manera alfabética
+print(nombres1)
+#Ordenas de manera descendente
+nombres1 = ['Juan Carlos','Karla','Pedro','Esperanza']
+nombres1 = sorted(nombres1, reverse=True) #Ordena los nombres de manera alfabética
+print(nombres1)
+#Ordenar por la cantidad de caracteres
+nombres1 = sorted(nombres1, key=len) #Ordena los nombres de manera alfabética
+print(nombres1)
+#built-in reversed
+nombres1 = reversed(nombres1) #Devuelve un iterable
+print(list(nombres1)) #Pone la lista original con orden inverso
