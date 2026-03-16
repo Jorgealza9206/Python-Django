@@ -13,7 +13,7 @@ print(f'Extender la lista1: {nombres1}')
 numeros1 = [10,40,15,4,20,90,4]
 print(f'Lista original : {numeros1}')
 # Obtener el índice del primer elemento encontrado de una lista
-print(f'ÍNdice 4: {numeros1.index(4)}')
+print(f'Índice 4: {numeros1.index(4)}')
 
 # Invertir el orden de los elementos de una lista
 numeros1.reverse()
@@ -25,3 +25,27 @@ print(f'Lista ordenada ascendente : {numeros1}')
 # Ordenar de manera descendente
 numeros1.sort(reverse=True)
 print(f'Lista ordenada descendente : {numeros1}')
+
+#Obtener el valor mínimo mínimo y máximo de una lista
+
+print(f'Valor mínimo: {min(numeros1)}')
+print(f'Valor mánimo: {max(numeros1)}')
+
+# Copiar los elementos de una lista
+#No es una copia profunda, solo referencias
+numeros2 = numeros1.copy()
+print(numeros1)
+print(numeros2)
+
+print(f'Misma referencia? {numeros1 is numeros2}')
+print(f'Mismo contenido? {numeros1 == numeros2}')
+
+# Podemos usar el constructor de la lista
+numeros2 = list(numeros1)
+print(f'Misma referencia? {numeros1 is numeros2}')
+print(f'Mismo contenido? {numeros1 == numeros2}')
+
+#slicing
+numeros2 = numeros1[:]
+print(f'Misma referencia? {numeros1 is numeros2}')
+print(f'Mismo contenido? {numeros1 == numeros2}')
