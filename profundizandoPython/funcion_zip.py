@@ -2,11 +2,14 @@
 # help(zip)
 
 numeros = [1,2,3]
-letras = ['a','b','c']
-mezcla = zip(numeros, letras)
-print(mezcla)
+letras = ['a','b','c','d']
+identificadores = 321, 322, 323, 324, 325 #Esto se convierte automáticamente en una tupla
+conjunto = {6,4,0,9,8,15,10}
+mezcla = zip(numeros, letras, identificadores, conjunto)
+#"La función zip en este caso ejecutará hasta el iterable de menor número de elementos
+#print(mezcla)
 print(list(mezcla))
 #Se puede mezclar varias listas o una tupla con una lista y las mezclas siempre quedan como tuplas
 
-mezcla = zip(numeros, letras)
-print(tuple(mezcla))
+# mezcla = zip(numeros, letras)
+# print(tuple(mezcla))
