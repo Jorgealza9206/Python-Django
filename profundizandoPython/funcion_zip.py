@@ -25,4 +25,9 @@ for numero, letra, id, aleatorio in zip(numeros, letras, identificadores, conjun
     #Crea una lista del primer elemento de cada uno de los elementos del zip en cada iteración
 print(nueva_lista)
 
+#unzip
+mezcla = [(1,'a'),(2,'b'),(3,'c'),(4,'d')]
+numeros, letras = zip(*mezcla) #Se separa primero número en números y letra en letras
+print(f'Numeros: {numeros}, Letras: {letras}')
+
 
