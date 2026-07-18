@@ -30,4 +30,12 @@ mezcla = [(1,'a'),(2,'b'),(3,'c'),(4,'d')]
 numeros, letras = zip(*mezcla) #Se separa primero número en números y letra en letras
 print(f'Numeros: {numeros}, Letras: {letras}')
 
-
+#ordenamiento
+letras = ['c','d','a','e','b']
+numeros = [3,2,4,1,0]
+mezcla = zip(letras, numeros)
+#Sin orden
+print(tuple(mezcla))
+#Ordenar por letra (primer iterable)
+print(sorted(zip(letras, numeros))) # En este caso el orden lo marca las letras de manera descendente
+print(sorted(zip(numeros, letras))) # En este caso el orden lo marca los números
