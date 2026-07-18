@@ -13,3 +13,16 @@ print(list(mezcla))
 
 # mezcla = zip(numeros, letras)
 # print(tuple(mezcla))
+
+#iterar en paralelo
+for numero, letra, id, aleatorio in zip(numeros, letras, identificadores, conjunto):
+    print(f'Número: {numero}, Letra: {letra}, Id: {id}, Aleatorio: {aleatorio}')
+
+nueva_lista = []
+
+for numero, letra, id, aleatorio in zip(numeros, letras, identificadores, conjunto):
+    nueva_lista.append(f'{id}-{numero}-{letra}-{aleatorio}')
+    #Crea una lista del primer elemento de cada uno de los elementos del zip en cada iteración
+print(nueva_lista)
+
+
