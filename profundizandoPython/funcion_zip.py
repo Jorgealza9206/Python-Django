@@ -39,3 +39,16 @@ print(tuple(mezcla))
 #Ordenar por letra (primer iterable)
 print(sorted(zip(letras, numeros))) # En este caso el orden lo marca las letras de manera descendente
 print(sorted(zip(numeros, letras))) # En este caso el orden lo marca los números
+
+# Crear un diccionario con zip y dos iterables
+llaves = ['Nombre','Apellido','Edad']
+valores = ['Juan','Pérez',18]
+diccionario = dict(zip(llaves, valores))
+print(diccionario)
+
+#Actualizar un elemento de un diccionario
+llave = ['Edad'] # Es vital que se llame igual que la llave a la que se va a modificar por que o sino no la cambia y
+# se agrega una nueva llave
+nueva_edad = [28]
+diccionario.update(zip(llave, nueva_edad)) #En este metodo vamos a reemplazar la edad dentro del diccionario
+print(diccionario)
