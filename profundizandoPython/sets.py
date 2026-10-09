@@ -34,3 +34,24 @@ print(conjunto_copia)
 # Verificar la igualdad
 print(f'¿Es igual en contenido?: {conjunto == conjunto_copia}')
 print(f'¿Es la misma referencia?: {conjunto is conjunto_copia}')
+
+#Operaciones de conjuntos utilizando set
+#Personas con distintas características
+
+pelo_negro = {'Juan','Carla', 'Pedro','Maria'}
+pelo_rubio = {'Lorenzo','Laura','Marco'}
+ojos_cafe = {'Carla','Laura'}
+menores_30 = {'Juan','Carla','Maria'}
+#Todos los elementos de color cafe y pelo rubio (Union) (No se repiten elementos)
+print(ojos_cafe.union(pelo_rubio))
+#Invertir el orden con el mismo resultado
+print(pelo_rubio.union(ojos_cafe))
+
+#Intersección - Sólo las personas de color café y pelo rubio (Es conmutativa)
+print(ojos_cafe.intersection(pelo_rubio))
+
+# (difference) Personas con pelo negro que no tienen ojos café (No conmutativa)
+print(pelo_negro.difference(ojos_cafe))
+
+# (Diferencia simétrica) Personas con pelo negro y que no tienen ojos café (Conmutativa)
+print(pelo_negro.symmetric_difference(ojos_cafe))
