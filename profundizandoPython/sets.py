@@ -41,7 +41,7 @@ print(f'¿Es la misma referencia?: {conjunto is conjunto_copia}')
 pelo_negro = {'Juan','Carla', 'Pedro','Maria'}
 pelo_rubio = {'Lorenzo','Laura','Marco'}
 ojos_cafe = {'Carla','Laura'}
-menores_30 = {'Juan','Carla','Maria'}
+menores_30 = {'Juan','Carla','Maria','Pedro','Raúl'}
 #Todos los elementos de color cafe y pelo rubio (Union) (No se repiten elementos)
 print(ojos_cafe.union(pelo_rubio))
 #Invertir el orden con el mismo resultado
@@ -55,3 +55,14 @@ print(pelo_negro.difference(ojos_cafe))
 
 # (Diferencia simétrica) Personas con pelo negro y que no tienen ojos café (Conmutativa)
 print(pelo_negro.symmetric_difference(ojos_cafe))
+
+#Vamos a preguntar si un set está contenido en otro (subset)
+#Revisamos si los elementos del primer set están contenidos en el segundo set
+print(menores_30.issubset(pelo_negro))
+
+#Vamos a preguntar si un set contiene a otro set
+#Revisar si los elementos del primer set están contenidos en el segundo set
+print(menores_30.issuperset(pelo_negro))
+
+#Preguntar si los de pelo negro no tienen pelo rubio (disjoint)
+print(pelo_negro.isdisjoint(pelo_rubio))
